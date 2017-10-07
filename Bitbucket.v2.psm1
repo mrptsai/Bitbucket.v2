@@ -21,7 +21,6 @@
     return $tmp
     
 }
-
 Function Connect-Bitbucket {    
     
     <# 
@@ -85,7 +84,6 @@ Function Connect-Bitbucket {
     }
 
 }
-
 Function Get-BitbucketKey {
     
     <# 
@@ -160,7 +158,6 @@ Function Get-BitbucketKey {
     }
         
 }
-
 Function New-BitbucketToken {
     
     <# 
@@ -235,7 +232,6 @@ Function New-BitbucketToken {
     }
         
 }
-
 Function Update-BitbucketToken {
     
     <# 
@@ -304,3 +300,5 @@ Function Update-BitbucketToken {
     }
         
 }
+
+Export-ModuleMember -Function @('ConvertTo-Base64String', 'Connect-Bitbucket', 'Get-BitbucketKey', 'New-BitbucketToken', 'Update-BitbucketToken')
